@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Syazmi Syakira Portfolio</title>
+<meta name="description" content="Syazmi Syakira, Frontend Developer in Selangor, Malaysia. 5+ years building web apps with Angular, React and TypeScript.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Mono:wght@400;500&family=Hanken+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#about">Skip to content</a>
+
+<!-- ========== NAV ========== -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="monogram" href="#top" aria-label="Back to top">SS</a>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a class="pill pill--blue" href="resume.pdf" target="_blank" rel="noopener">See resume</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <!-- Decorative background. To use a photo instead: <img class="hero__photo" src="assets/hero.jpg" alt=""> -->
+    <div class="hero__photo hero__bg" aria-hidden="true"></div>
+
+    <div class="wrap hero__content">
+      <figure class="snippet" aria-label="About me as code">
+        <div class="snippet__bar"><i></i><i></i><i></i><span>syakira.ts</span></div>
+<pre><code><span class="k">const</span> syakira = {
+  role: <span class="s">'Frontend Developer'</span>,
+  stack: [<span class="s">'Angular'</span>, <span class="s">'React'</span>, <span class="s">'TS'</span>],
+  experience: <span class="n">'5+ years'</span>,
+  basedIn: <span class="s">'Selangor, MY'</span>,
+};</code></pre>
+      </figure>
+
+      <div class="hero__name">
+        <h1 class="script">Syazmi Syakira</h1>
+        <p class="tape-label">Frontend Developer Portfolio</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INFO STRIP ========== -->
+  <section class="strip" aria-label="Quick facts">
+    <div class="wrap strip__grid">
+      <div class="fact">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 13.5 7 21l5-2.5L17 21l-1.5-7.5"/></svg>
+        <p>5+ years building<br>production web apps</p>
+      </div>
+      <div class="fact">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <p>Based in Kuala Langat,<br>Selangor, Malaysia</p>
+      </div>
+      <div class="fact">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg>
+        <p>Angular, React and<br>TypeScript specialist</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT (scrapbook) ========== -->
+  <section class="about" id="about">
+    <div class="wrap about__grid">
+      <div class="polaroid-col">
+        <span class="tape tape--hi">Hi :)</span>
+        <span class="clip" aria-hidden="true"></span>
+        <div class="polaroid">
+          <img class="polaroid__img" src="assets/portrait.jpg" alt="Portrait of Syazmi Syakira" width="800" height="1000">
+        </div>
+        <p class="script script--sign">I'm Syakira</p>
+      </div>
+
+      <div class="note-col">
+        <div class="note">
+          <span class="tape tape--top" aria-hidden="true"></span>
+          <p>I've spent the last five years turning designs into fast, reliable web apps, from machine learning dashboards to e-commerce stores.</p>
+          <p>Now I build payment flows and warehouse tools at Commerce.Asia, working with designers and backend engineers so every screen feels simple to use.</p>
+        </div>
+        <div class="btn-row">
+          <a class="pill pill--ghost" href="resume.pdf" target="_blank" rel="noopener">See resume</a>
+          <a class="pill pill--rose" href="https://linkedin.com/in/syazmi-syakira" target="_blank" rel="noopener">Visit LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED WORK ========== -->
+  <section class="work" id="work">
+    <div class="wrap">
+      <h2 class="display display--light">Featured Work</h2>
+      <p class="section-sub">Products I've helped ship. Screenshots and case studies coming soon.</p>
+
+      <div class="folders">
+        <article class="folder folder--rose">
+          <span class="folder__tab">Payments · React</span>
+          <h3>Payment Gateway</h3>
+          <p>Payment API integrations and secure, interactive transaction flows built to industry compliance standards.</p>
+          <ul class="chips"><li>React</li><li>TypeScript</li><li>REST APIs</li></ul>
+          <p class="folder__meta">Commerce.Asia · 2023 – now</p>
+        </article>
+
+        <article class="folder folder--blue">
+          <span class="folder__tab">Operations · React</span>
+          <h3>Warehouse Management System</h3>
+          <p>The interface warehouse teams use to track inventory and fulfil orders faster and more accurately.</p>
+          <ul class="chips"><li>React</li><li>TypeScript</li><li>Responsive UI</li></ul>
+          <p class="folder__meta">Commerce.Asia · 2023 – now</p>
+        </article>
+
+        <article class="folder folder--cream">
+          <span class="folder__tab">E-commerce · Angular</span>
+          <h3>E-commerce Storefront</h3>
+          <p>A customer-facing shop with reusable components connected to backend APIs for a smooth checkout.</p>
+          <ul class="chips"><li>Angular</li><li>Bootstrap</li><li>REST APIs</li></ul>
+          <p class="folder__meta">SKSA Technology · 2022</p>
+        </article>
+
+        <article class="folder folder--sky">
+          <span class="folder__tab">ML Platform · Web</span>
+          <h3>ML Pipeline Dashboard</h3>
+          <p>A responsive app for deploying, managing and visualising machine learning pipelines.</p>
+          <ul class="chips"><li>JavaScript</li><li>HTML/CSS</li><li>Visualisation</li></ul>
+          <p class="folder__meta">Skymind · 2021</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats" aria-label="At a glance">
+    <div class="wrap stats__grid">
+      <div class="stat"><strong>5+</strong><span>Years of frontend<br>experience</span></div>
+      <div class="stat"><strong>3</strong><span>Tech companies<br>worked at</span></div>
+      <div class="stat"><strong>4</strong><span>Product domains<br>shipped</span></div>
+      <div class="stat"><strong>3.51</strong><span>CGPA, Software<br>Engineering, UTM</span></div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="experience" id="experience">
+    <div class="wrap">
+      <h2 class="display">Experience</h2>
+      <ol class="timeline">
+        <li class="job">
+          <div class="job__date">Jan 2023 – Present</div>
+          <div class="job__body">
+            <h3>Frontend Developer <span>· Commerce.Asia</span></h3>
+            <ul>
+              <li>Built the UI of a warehouse management system in React, improving inventory accuracy and order fulfilment speed.</li>
+              <li>Integrated payment APIs and built secure transaction flows for a payment gateway in React.</li>
+              <li>Reviewed teammates' code and tested features before release to reduce production issues.</li>
+              <li>Worked with product, design, backend and business teams to turn requirements into shipped features.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job">
+          <div class="job__date">Mar 2022 – Dec 2022</div>
+          <div class="job__body">
+            <h3>Frontend Developer <span>· SKSA Technology Sdn Bhd</span></h3>
+            <ul>
+              <li>Developed and maintained a customer-facing e-commerce website in Angular.</li>
+              <li>Turned UI designs into reusable components and connected them to backend APIs.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job">
+          <div class="job__date">Jan 2021 – Dec 2021</div>
+          <div class="job__body">
+            <h3>Junior Frontend Developer <span>· Skymind Sdn Bhd</span></h3>
+            <ul>
+              <li>Developed a responsive web app for deploying, managing and visualising machine learning pipelines.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS & EDUCATION ========== -->
+  <section class="skills" id="skills">
+    <div class="wrap">
+      <h2 class="display display--light">Skills &amp; Education</h2>
+
+      <div class="edu">
+        <p class="edu__degree">Bachelor of Computer Science (Software Engineering) · Universiti Teknologi Malaysia</p>
+        <p class="edu__meta">2016 – 2020 · CGPA 3.51</p>
+      </div>
+
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>Frameworks</h3>
+          <ul class="badges"><li>Angular</li><li>React</li><li>Next.js</li><li>React Native</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul class="badges"><li>TypeScript</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Styling</h3>
+          <ul class="badges"><li>Tailwind CSS</li><li>Bootstrap</li><li>Responsive design</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <ul class="badges"><li>Git</li><li>GitHub</li><li>Figma</li><li>Postman</li><li>VS Code</li><li>IntelliJ IDEA</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="wrap contact__inner">
+      <p class="script script--contact">Let's work together</p>
+      <p class="contact__lead">Open to frontend roles and collaborations. The fastest way to reach me is email.</p>
+      <div class="contact__list">
+        <div class="contact__item">
+          <span class="contact__k">Email</span>
+          <a href="mailto:syazmisyakira.rudzlan@gmail.com" id="email">syazmisyakira.rudzlan@gmail.com</a>
+          <button class="copy" id="copyEmail" type="button">Copy</button>
+        </div>
+        <div class="contact__item">
+          <span class="contact__k">Phone</span>
+          <a href="tel:+601129406050">+60 11-2940 6050</a>
+        </div>
+        <div class="contact__item">
+          <span class="contact__k">LinkedIn</span>
+          <a href="https://linkedin.com/in/syazmi-syakira" target="_blank" rel="noopener">linkedin.com/in/syazmi-syakira</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <span>© <span id="year">2026</span> Syazmi Syakira</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
